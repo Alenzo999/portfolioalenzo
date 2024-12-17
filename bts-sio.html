@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio BTS SIO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #2196f3; --accent: #ff4081; --dark: #121212; --light: #f5f5f5; --bg-gradient: linear-gradient(45deg, #2196f3, #ff4081); }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background: var(--dark); color: var(--light); overflow-x: hidden; }
+        h2, h3 { font-weight: 600; color: var(--primary); }
+        p { line-height: 1.8; margin: 1rem 0; color: var(--light); }
+        
+        /* Navbar Styling */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(18, 18, 18, 0.9);
+            padding: 1rem;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .nav-links a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            text-transform: uppercase;
+            transition: color 0.3s, transform 0.3s;
+        }
+        .nav-links a:hover {
+            color: var(--accent);
+            transform: scale(1.1);
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 5rem 2rem;
+            background: var(--bg-gradient);
+            text-align: center;
+            border-bottom: 1px solid var(--light);
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: left;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .list {
+            margin-left: 2rem;
+            margin-top: 1rem;
+        }
+
+        .list li {
+            margin: 0.5rem 0;
+            padding-left: 0.5rem;
+            position: relative;
+        }
+
+        .list li::before {
+            content: "✔";
+            color: var(--primary);
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: rgba(18, 18, 18, 0.9);
+            color: var(--light);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .section {
+                padding: 4rem 1rem;
+            }
+            .content {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="profil.html">Profil</a>
+            <a href="projets.html">Projets</a>
+            <a href="bts-sio.html">BTS SIO</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section class="section">
+        <h2>BTS SIO - Services Informatiques aux Organisations</h2>
+        <div class="content">
+            <p>L’objectif du BTS SIO est de former des Techniciens Supérieurs capables d’intervenir dans différents domaines informatiques tels que la Cybersécurité, le développement Web et mobile, l'administration d'infrastructure système/réseau et cloud. Cette formation se compose d’un tronc commun au 1er semestre, suivi de deux spécialisations :</p>
+            <ul class="list">
+                <li><strong>SLAM (Solutions Logicielles et Applications Métiers)</strong></li>
+                <li><strong>SISR (Solutions d’Infrastructure, Systèmes et Réseaux)</strong></li>
+            </ul>
+
+            <h3>Spécialité SLAM</h3>
+            <p>Le titulaire du diplôme en SLAM développe des applications dans divers domaines de l’entreprise, allant des applications de gestion au développement Web et mobile, tout en assurant la maintenance des composants logiciels et la gestion des bases de données.</p>
+            <p><strong>Compétences et technologies utilisées :</strong></p>
+            <ul class="list">
+                <li><strong>Langages : </strong>PHP, Java, JavaScript, Python, C#</li>
+                <li><strong>Outils de développement : </strong>Visual Studio, NetBeans, Android Studio, IntelliJ, Git</li>
+                <li><strong>SGBD : </strong>MySQL, SQL Server, PostgreSQL, MongoDB</li>
+                <li><strong>Cybersécurité : </strong>Injection SQL, failles des applications web, sécurisation des données, cryptage et hachage, bonnes pratiques de codage, échanges sécurisés de données</li>
+            </ul>
+
+            <h3>Spécialité SISR</h3>
+            <p>Le titulaire du diplôme en SISR est un technicien spécialisé dans l’administration, la supervision et la sécurisation des infrastructures systèmes et réseaux. Il veille à la gestion des services sur les serveurs Linux et Windows dans des environnements virtualisés.</p>
+            <p><strong>Compétences et technologies utilisées :</strong></p>
+            <ul class="list">
+                <li><strong>Réseaux : </strong>VLAN, IPv4/IPv6, Routage, NAT, GLBP</li>
+                <li><strong>Systèmes : </strong>Annuaire, DNS, DHCP, WEB, Répartiteur de charge, Supervision, Sauvegarde</li>
+                <li><strong>Cybersécurité : </strong>Stormshield, Wallix, sécurité des applications web (HTTPS, fuzzing, injection SQL), Hardening système (firewall, droits Linux/NTFS, SELinux), Sécurisation des réseaux (ARP spoofing, DHCP snooping)</li>
+            </ul>
+
+            <h3>Poursuite d’études</h3>
+            <p>Après l’obtention du BTS SIO, les étudiants peuvent continuer leurs études dans un bachelor universitaire, une école d’ingénieurs, ou une école privée. Dans le cadre de la spécialité SISR, un Bachelor d’Administrateur d’Infrastructure sécurisée est également proposé par notre établissement.</p>
+
+            <h3>Débouchés professionnels</h3>
+            <p>Les étudiants peuvent entrer dans la vie active après le BTS SIO dans des services informatiques internes ou des entreprises de services numériques (ESN). Selon la spécialité choisie, voici quelques exemples de postes :</p>
+            <ul class="list">
+                <li>Développeur d'application</li>
+                <li>Gestionnaire de bases de données</li>
+                <li>Formateur</li>
+                <li>Correspondant informatique</li>
+                <li>Technicien support hotline</li>
+                <li>Administrateur de serveurs</li>
+                <li>Technicien réseau</li>
+                <li>Technicien support système et réseau</li>
+            </ul>
+            <p>Avec de l'expérience, les diplômés peuvent évoluer vers des postes à responsabilités comme administrateur systèmes et réseaux, pilote d’exploitation, analyste programmeur, ou technicien d’études informatiques.</p>
+        </div>
+    </section>
+
+    <div class="footer">
+        <p>&copy; 2024 BTS SIO - Portfolio</p>
+    </div>
+</body>
+</html>
